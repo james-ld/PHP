@@ -1,25 +1,19 @@
-type CloudBaseRunVersionConfig struct {
-	ContainerPort int32               `json:"ContainerPort"`
-	ContainerSpec ContainerSpecConfig `json:"ContainerSpec"`
-	Capacity      CapacityConfig      `json:"Capacity"`
-	Log           LogConfig           `json:"Log"`
-	EnvParams     string              `json:"EnvParams"`
-}
-
-type ContainerSpecConfig struct {
-	Cpu float32 `json:"Cpu"`
-	Mem float32 `json:"Mem"`
-}
-
-//CapacityConfig strcut implement
-type CapacityConfig struct {
-	MinNum          int32  `json:"MinNum"`
-	MaxNum          int32  `json:"MaxNum"`
-	PolicyType      string `json:"PolicyType"`
-	PolicyThreshold int32  `json:"PolicyThreshold"`
-}
-
-//LogConfig strcut implement
-type LogConfig struct {
-	CustomLogs string `json:"CustomLogs"`
+{
+	"CloudBaseRunVersionConfig": {
+		"ContainerPort": 8088,
+		"ContainerSpec": {
+			"Cpu": 32,
+			"Mem": 60
+		},
+		"Capacity": {
+			"MinNum": 10,
+			"MaxNum": 15,
+			"PolicyType": "shit",
+			"PolicyThreshold": 64
+		},
+		"Log": {
+			"CustomLogs": "CustomLogs"
+		},
+		"EnvParams": "EnvParams"
+	},
 }
