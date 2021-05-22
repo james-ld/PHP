@@ -3,7 +3,7 @@
 		"ContainerPort": 8088,
 		"ContainerSpec": {
 			"Cpu": 1,
-			"Mem": 2
+			"Mem": 20000
 		},
 		"Capacity": {
 			"MinNum": 1,
