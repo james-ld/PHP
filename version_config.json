@@ -1,19 +1,17 @@
 {
-	"CloudBaseRunVersionConfig": {
-		"ContainerPort": 8088,
-		"ContainerSpec": {
-			"Cpu": 1,
-			"Mem": 20480
-		},
-		"Capacity": {
-			"MinNum": 1,
-			"MaxNum": 5,
-			"PolicyType": "cpu",
-			"PolicyThreshold": 64
-		},
-		"Log": {
-			"CustomLogs": ""
-		},
-		"EnvParams": ""
-	}
+	"ContainerPort": 8088,
+	"ContainerSpec": {
+		"Cpu": 1,
+		"Mem": 20480
+	},
+	"Capacity": {
+		"MinNum": 1,
+		"MaxNum": 5,
+		"PolicyType": "cpu",
+		"PolicyThreshold": 64
+	},
+	"Log": {
+		"CustomLogs": ""
+	},
+	"EnvParams": ""
 }
