@@ -1,7 +1,7 @@
 {
 	"ContainerPort": 8080,
 	"ContainerSpec": {
-		"Cpu": 0.5,
+		"Cpu": 1,
 		"Mem": 2
 	},
 	"Capacity": {
